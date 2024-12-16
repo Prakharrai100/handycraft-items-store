@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Craft Store</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="checkout-page">
+    <!-- Navigation Bar -->
+    <header class="header">
+        <div class="navbar">
+            <div class="logo">
+                <h1>Craft Store</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="checkout.html">Cart</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Checkout Section -->
+    <section class="checkout">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+
+        <div class="total">
+            <p>Total: ₹<span id="total-amount">0.00</span></p>
+        </div>
+<a href="https://paytm.com/money-transfer">  <button class="btn" id="pay-button">Proceed to Pay</button></a>
+        
+    </section>
+
+    <script src="/js/cart.js"></script>
+</body>
+</html>

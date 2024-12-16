@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Handys Store</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="header">
+        <div class="navbar">
+            <div class="logo">
+                <h1>Handys Store</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="checkout.html" class="cart">Cart (<span id="cart-count">0</span>)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Products Section -->
+    <section class="featured-products">
+        <h2>Our Products</h2>
+        <div class="product-list">
+            <!-- 10 Product Items -->
+            <div class="product-item" data-id="10">
+                <img src="media/product1.jpg" alt="Product 1">
+                <h3>Handmade Pottery</h3>
+                <p>5,849.96rs</p>
+                <a href="https://www.amazon.com/Tsuri-Ceramic-Raku-Vase-Handmade/dp/B09N6GZCM7/ref=sxin_16_pa_sp_search_thematic_sspa?content-id=amzn1.sym.1bfb7020-bc2b-4494-b17e-0160f1a71ab1%3Aamzn1.sym.1bfb7020-bc2b-4494-b17e-0160f1a71ab1&crid=CQJK08X1GQQ5&cv_ct_cx=Handmade%2BPottery&keywords=Handmade%2BPottery&pd_rd_i=B09N6GZCM7&pd_rd_r=246cb3f6-7b66-4247-bade-31e97eff0eaa&pd_rd_w=Cv00z&pd_rd_wg=8lgaj&pf_rd_p=1bfb7020-bc2b-4494-b17e-0160f1a71ab1&pf_rd_r=QVMY12E3A2Z6TM9R3Y3S&qid=1734257688&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=handmade%2Bpottery%2Caps%2C337&sr=1-1-7efdef4d-9875-47e1-927f-8c2c1c47ed49-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&th=1" class="btn">View Product</a>
+                <button class="btn add-to-cart" onclick="showAlert('Item is successfully added to cart')">Add to Cart</button>
+            </div>
+            <div class="product-item" data-id="1">
+                <img src="media/product2.jpg" alt="Product 2">
+                <h3>Wooden Spoon Set</h3>
+                <p>1,271.73rs</p>
+                <a href="https://www.amazon.com/Riveira-Apartment-Essentials-Nonstick-Housewarming/dp/B0823FQKH6/ref=sr_1_6?crid=1EXX5HN58IS5D&dib=eyJ2IjoiMSJ9.fKLzdxUwHkUl2XhGTVPU9rMX-cizlqz4VR2UwqLnx9aSzfbfJnAH8nsEq_nMAISyfbJSmvx70DKVKWLGUpikxkusctFblpTy4S02QIFmp_9ZQuciEYLXUB4noHBspbITAbclrxpYGvgxNVLTVcyn3howqigUGurCjkqwrKI6ArFCTIUlMjOgYxZg3DPjRemomsUWOuQrnZC0xOVyeGGiLH5x_pZe9jTztqChe4dTmaj0uZx0TAnNwoUiDtMEcGuaLgDHlpa12XpTIQvG4qsLXhbxHuCaca0m4lmEyBY_TbN3c5xBAB11zvXawR-9hPkc4zek5SEzPnFb7kSIemfVe7utntLrL9V3w03KDPc_706gH_PB9u1_jHFab4ZmlGGePq1XUDQu8iE1Gw_us9MhczcKuKk7nJP72-9q6ZFluBfNzUmslxYp0aFJ2qFgGNaL.leDFBk2Z_5ygnX7TQnUiv7ZkrWnOrPiN9GMsxfnCSwQ&dib_tag=se&keywords=wooden%2Bspoon%2Bset&qid=1734257365&sprefix=wooden%2Bspoon%2Bse%2Caps%2C337&sr=8-6&th=1" class="btn">View Product</a>
+                <button class="btn add-to-cart" onclick="showAlert('Item is successfully added to cart')">Add to Cart</button>
+            </div>
+            <div class="product-item" data-id="2">
+                <img src="media/product3.jpg" alt="Product 3">
+                <h3>Handmade Necklace</h3>
+                <p>2,119.55rs</p>
+                <a href="https://www.amazon.com/Necklace-Necklaces-Starfish-Freshwater-Handmade/dp/B0B6TVYH74/ref=sr_1_4?crid=1TGNQ3DG6AE2T&dib=eyJ2IjoiMSJ9.JrdocmOsVPzRgNdDNJbwHdyzdWjqsuGzq1upw-GhL2ozan7L-91eCdAxxiwE1cA856JvUR9g6ufW51zXveq0J9cj73yMDbtBUrZW74cqYhOckINi5lJBuSmY0f2lHnJ5YIxTXCaYZbNN_50q-QucW7U9Tj8AJIuQ6VfEIkVyFH1Oe9aAaeYdK4K4zVFG3cSIzcwfb2Na9xUXd7JciijdHGEb_QNFlx_jDsK9BAW4g_drOJ0WFFiF2qLvOpZSp4ibh7B9uYOvHCh8oRaWLvO0ry85evdmsrLHLiwhr873G45WIC7aMgmJn2oUpynQ01NVFLMk6rl5m8mULob38kpespK0jnGYsUqTDjQjSL7FZRcJhsQj_16G0anCV7G4TXp-LbTHZAM7H7cPhw8RKQXJeQCyABYZ5mfQu3FxM-yShSf8maBQb-HgsScvInnrD9RM.n1VlBOqckpEcChDFgkz5L-oIdv77rEEoS9x-ffODbHI&dib_tag=se&keywords=handmade%2Bnecklace&qid=1734257809&sprefix=handmade%2Bknecklace%2Caps%2C336&sr=8-4&th=1" class="btn">View Product</a>
+                <button class="btn add-to-cart" onclick="showAlert('Item is successfully added to cart')">Add to Cart</button>
+            </div>
+            <div class="product-item" data-id="3">
+                <img src="media/product4.jpg" alt="Product 4">
+                <h3>Hand-Woven Blanket</h3>
+                <p>3,391.28rs</p>
+                <a href="https://www.amazon.com/LAGRATY-Blanket-Chenille-50x60%EF%BC%8CHandmade-Crochet/dp/B0BR728TB6/ref=sr_1_5?crid=2NZJYHAE2J0YU&dib=eyJ2IjoiMSJ9.bQWzCT_3SIdN9xPtWqKUJ6s0bvCRTJYji0q2SD9t4y__gzR3M3Ymw3bJ7yWHErXnqwU2TwnJpcaWjcX5a0oGAa26OjGFZOdJQr5NpSQ3QJV6ENJ8l6xuTje2KL-jgRnEgrfuNqAKABatq5Cwc2xGzoHQaOX2wpQbWAheecTuXzIYMU52AXT5kjJHgU2Q6BUAJV08sbJOKFEDdWyR9deZusWrhOd5h6B9LZTmyf7ovnX-fGJHslq1etSdTv-vhjc2mMTEvoYLnEEdG_yLrPY1XzEfzcq7ZbD4pZ79Lhbqerz6qHHMoJRdbvHw3oD_9JXepAk14scB2tVGgJsLqVmn4QVxls3NOMHmm6okciYK8kv9s6V2Vi-7V8LXdHUpijKZqFXCcv0awM4oViOODbuDojFdzSHyCZboq5pPBM_uF9IMM_fATrciIKOhXK-Izekm.P_6WeP1q5BveBZoURbdNM9Q78uxuLcs3IgeKz48kBp0&dib_tag=se&keywords=Hand-Woven%2BBlanket&qid=1734257980&sprefix=handmade%2Bnecklace%2Caps%2C788&sr=8-5&th=1" class="btn">View Product</a>
+                <button class="btn add-to-cart" onclick="showAlert('Item is successfully added to cart')">Add to Cart</button>
+            </div>
+            <div class="product-item" data-id="4">
+                <img src="media/product5.jpg" alt="Product 5">
+                <h3>Rustic Wooden Shelf</h3>
+                <p>2,967.37rs</p>
+                <a href="https://www.amazon.com/Farmhouse-Floating-Shelves-Bathroom-Mounted-Wooden-Shelving/dp/B0DGQH2N6G/ref=sr_1_2_sspa?crid=16KDT06GG7L4&dib=eyJ2IjoiMSJ9.LJLErOJIml4j9cx939_Ud5ABZIZ4iAlS_BdtC3ZK7a_noXO2rq9cupoRCFF3vFQX0zAI520F3jnX57L4pNZ6fiYrnsN280X4qr4Py6dcyHy0ue8NgHRk-QNzJkJaseFWVlcZqnhwDoHOvZ-q4ZroHOCyuJVZ39VqPlArmYE2vguJWHakj2UrS6dR9vgsUsefubuxcNaVN9BaTlUF34xKlIC7EjhDc-CSAO12op6N_hd98UYcvPu6yRH1OImE79TN9nuFG27jHFH1B6khEASyJzg5FsRFw-GHVGC93nFivzw.WtX1yNx5qH0ilYgpI5CazmHGS78YEahnEoDtXnL8LZA&dib_tag=se&keywords=Rustic%2BWooden%2BShelf&qid=1734258050&sprefix=rustic%2Bwooden%2Bshelf%2Caps%2C327&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1" class="btn">View Product</a>
+                <button class="btn add-to-cart" onclick="showAlert('Item is successfully added to cart')">Add to Cart</button>
+            </div>
+            <div class="product-item" data-id="5">
+                <img src="media/product6.jpg" alt="Product 6">
+                <h3>Handmade Candle</h3>
+                <p>847.82rs</p>
+                <a href="https://www.amazon.com/Red-Barn-Candle-Company-All-Natural/dp/B0BTC5R2C6/ref=sr_1_5?crid=1C0ZGTPCGPVN3&dib=eyJ2IjoiMSJ9.bEPiM4lmO6thz_lw15r0WhTbJHA9LLEIWlIs3jcwixeESp74tZh1VPj1I6DYH45LCO1zxFP8eQBt7TlAE2sVUGgkUDTh-RCY7csqO6qnRACAKco9DReR5YtwDPy_DaRnd80_5-Grx66CsQVr-9E7USaJXkih2KtqF1Ef_JM-MhF_D7KGxc8hisyiuW4p1YZy0rN6rT3WPWHiMgt1MbBBm4fyqmMt36X-A2jc8AGIR-JvfiUGK5TVdBmILhEyNxXdgXZpuQlL5XDNnJot2qwe2hOIKe7LmSxECHEfVou9MjCPmaAaZaDudWY6CigN0aKRaAzgZGPae45SJM2OUVCOEHeocxnpUVhMJR0GwD-b1V2PzKtDKvwhD6aYmMKyUENFot9Jk2JB1KO_z5UzpPicLQTL21mm5FSjiWfCRp74lcufGqWtKffVB0SKP2xBjU0F.oAxHSfwS2mt82mokLK6b9b8syaeh1oCBTiIzmt7zvOw&dib_tag=se&keywords=Handmade%2BCandle&qid=1734258091&sprefix=handmade%2Bcandle%2Caps%2C288&sr=8-5&th=1" class="btn">View Product</a>
+                <button class="btn add-to-cart" onclick="showAlert('Item is successfully added to cart')">Add to Cart</button>
+            </div>
+            <div class="product-item" data-id="6">
+                <img src="media/product7.jpg" alt="Product 7" height="200px" width="200px">
+                <h3>Knitted Scarf</h3>
+                <p>1,526.08rs</p>
+                <a href="https://www.amazon.com/C-C-Womens-Multicolored-Tassel-Scarf-Black/dp/B07HYHGQ3F/ref=sr_1_6?crid=2H5T71GI1D5BJ&dib=eyJ2IjoiMSJ9.WioehSB6zloDHKIeFYPdxEeY24Xsr-ImjxuKEPK03wQN5WhMwpA8-zfuD2V7t_dvsEy-4bXPD1WPD1VknxA3PVfgZqUVyMPlwmQMnPSdIW8toLwhvB6cUg9TJ1pFNpTYhNonS4pB5O85dMh9VkXFoBoRkQ1n4KAWpvToTmppTM_dVxZFHsMjLY1OW_3rs55p-LZEMwN2Ic3A7OO0uoUFQGNRHiVWz8PWf9_1ZGRGrtddKMt2awhTZSbVU2tkJlgLcRaXcGgmcf6gwREwM3xT8sU-HAjS0H3a4xmniIx6zdizNTeyx_ssEY17aYRuaQJK9uwk7UV2uSzlsYn7Xb61fPS6qfML-hu_yJB1srEwjIxiGk7V92vwf9bvL8L1J7DiWJiHAQZgN3Lnd798XYd5IH599ot_htT43NZKlvW0v6K7HWKKz4IDSJMzObMDC0AV.1go_sGhvQReF_Qd-ZLwLn8_hEJHj847-ghVpPiaVE-I&dib_tag=se&keywords=Knitted+Scarf&qid=1734258136&sprefix=knitted+scarf%2Caps%2C367&sr=8-6" class="btn">View Product</a>
+                <button class="btn add-to-cart" onclick="showAlert('Item is successfully added to cart')">Add to Cart</button>
+            </div>
+            <div class="product-item" data-id="7">
+                <img src="media/product8.jpg" alt="Product 8">
+                <h3>Wooden Coasters</h3>
+                <p>1,017.38rs</p>
+                <a href="https://www.amazon.com/Avocrafts-Wooden-Coasters-Modern-Coaster/dp/B093XT3YHM/ref=sr_1_2_sspa?crid=1ZQF7KN9BMP7D&dib=eyJ2IjoiMSJ9.UbMALlNcmjBGKs08R8Wc2n_IaU-axW0P5HyC4GlAhupHvZX1rmgk5mUsV-aTS1lFJcYxA1DKdMAJ1Fhn2rpjVtOhTAfPpGXjKkHrR3yGFnTCiSA9F4H1Pb7GitAO_cZvA88TPjhKANWP7UJnKQevxhp9fETrKa7OaPDFY-8bBrhymznkq1VQMTVHv8PZgj8wybcTQL_u3qqJYhPcw_-I8SayMaY7m22eD2K-QRWXRSR5aE2dLqk-eyWEkdXgO3K8qgFNatJPF28usraUhwsOz_fjdkhbfPjFgX34Hx7piuA.-5zeStfWodOWzQdLP0aOCK7HYKZkaECUqUkuurXQGVA&dib_tag=se&keywords=Wooden%2BCoasters&qid=1734258176&sprefix=wooden%2Bcoasters%2Caps%2C292&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1" class="btn">View Product</a>
+                <button class="btn add-to-cart" onclick="showAlert('Item is successfully added to cart')">Add to Cart</button>
+            </div>
+            <div class="product-item" data-id="8">
+                <img src="media/product9.jpg" alt="Product 9">
+                <h3>Leather Wallet</h3>
+                <p>2,543.46rs</p>
+                <a href="https://www.amazon.com/Real-Leather-Trifold-Wallet-Men/dp/B0CHYJKZG9/ref=sr_1_16?crid=LIAMPFCA0QZI&dib=eyJ2IjoiMSJ9.MnjYJLiu5ccggtwBlMkDLKjjfw22VDHAhwbfvHNrWtcbgAw--9sLKHYEPnNDc7tdFfMQhs_Q8nmJgLfllwV6s83tIRo2N1E_2C4u54Tu0ubXP6A8bSo-F5seAiuS0CZ899tqVui-nExC0Z4fwXCYFaUlP9nXjdyNWtEtcFj1HyTt1d-TD8dDXQOjk_2VbGUzGI9W7Ch962Bq6PklKHo-DQrXWIkQvwez0mQLdD4AJzdKohv2swFwALOEIOVOygKcJ3XIQSGgyHFg-hZ7fEXc5v_z_xkh51oqL36-u4IiMT2T2IgLpp3jQPTqZKtPU5K0HYOZmc2qT1jrb9YiJ9rupgLAWsClczCrFM8fCT94gXJ6i0KWIusjyqXlZzMBbaO0HXDlUKIIxrzL6oSn0lM2N6PZ-zbHOGJrqMwGyfmG_6B36U6hWWXx00LA0-fa-3Ai.jIdeNxQogLOwhHxD80zUI-xXoGSisckM3x9J_JSMIHc&dib_tag=se&keywords=Leather+Wallet&qid=1734258253&sprefix=leather+wallet%2Caps%2C290&sr=8-16" class="btn">View Product</a>
+                <button class="btn add-to-cart" onclick="showAlert('Item is successfully added to cart')">Add to Cart</button>
+            </div>
+            <div class="product-item" data-id="9">
+                <img src="media/product10.jpg" alt="Product 10">
+                <h3>Handmade Earrings</h3>
+                <p>1,271.73rs</p>
+                <a href="https://www.amazon.com/Sterling-Silver-Pressed-Flower-Earrings/dp/B00M0O487A/ref=sr_1_1_ffob_sspa?crid=319OPUU6KSS9D&dib=eyJ2IjoiMSJ9.iIPxKuA6247ihtoeNgt-CaSnVsMaToJ_f9xVtlmtmC2j45bCfxdJt_YFDBBKWdzgJwVKpjIaW3o1EgjTs4qOkC6MaiecXvUGHdsS1TMjOABWxIw920-ZBZWlNbf2iS7rwWaxGKnDyYYEvEn-YFj6AJplrLzZTfjkcmnkrWXQ_Q4MMfz0llq0_tXTgyp0XNCHI1wHyjf85uGWgcO2AAgysEoqTaepbThUAyPJQSn34dImZwb6q6kvLOowYAf22Votil0gGREsCwOO3WZe5mXpr4J0eBCWy2D_UabnGRNTrdE.dA41EkWA1nqcA6X-HgXdjs8pzAmzVVb7BiY_nPRJEeg&dib_tag=se&keywords=Handmade%2BEarrings&qid=1734258300&sprefix=handmade%2Bearrings%2Caps%2C310&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1" class="btn">View Product</a>
+                <button class="btn add-to-cart" onclick="showAlert('Item is successfully added to cart')">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Hanyds Store. All Rights Reserved.</p>
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/cart.js"></script>
+    <script>
+        // JavaScript function to trigger an alert
+        function showAlert(productName) {
+            alert("Button is clicked and  " + productName);
+        }
+    </script>
+</body>
+</html>
